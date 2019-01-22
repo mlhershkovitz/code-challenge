@@ -11,5 +11,15 @@ function readyNow() {
 //need ajax GET request
 function submitGet() {
     console.log('button clicked');
-    $.ajax
+    $.ajax({
+        method: 'GET',
+        url: '/'
+    }).then(function (response) {
+        console.log('GET request response', response);
+       // $(`.welcome`).append(`<p>${response}</p>`);        
+    }); //end ajax GET 
 }; //end submitGet
+
+//something is wrong with my response, I'm troubleshooting but incase I dont finish
+
+
