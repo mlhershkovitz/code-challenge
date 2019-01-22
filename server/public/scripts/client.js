@@ -1,3 +1,4 @@
+
 console.log('JS working');
 
 //document ready for jquery use later on
@@ -19,7 +20,7 @@ console.log('Answer should be 15', multiply(3, 5));
 
 
 //second js challenge
-//function that takes the sum of every number in an array
+//function that takes the sum of every number in an array (will need loop)
 function sumArray(array) {
     let total = 0;
     for (let i = 0; i < array.length; i++) {
@@ -34,4 +35,26 @@ function sumArray(array) {
 let numArray = [4, 10, 7, 3];
 console.log('Answer should be 24', sumArray(numArray));
 //it works
+
+//third challenge
+//function that takes an array of strings to see if blue is one
+function blueExist(strArray) {
+//need to loop through array
+    for (let i = 0; i < strArray.length; i++) {
+    //need conditional to tell if blue is or not
+        if ('blue' === strArray[i]) {
+            return true;
+        }//end if
+    } //end loop
+    return false;
+};//end blueExist function
+
+//test function
+let strings = ['pink', 'yellow', 'purple'];
+console.log('Answer should be false', blueExist(strings));
+let stringsTwo = ['black', 'red', 'blue'];
+console.log('Answer should be true', blueExist(stringsTwo));
+//both work
+
+//fourth challenge
 
