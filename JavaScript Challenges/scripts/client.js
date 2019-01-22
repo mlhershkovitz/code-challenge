@@ -1,12 +1,12 @@
-
 console.log('JS working');
 
+//was going to have everything in one
 //document ready for jquery use later on
-$(document).ready(readyNow);
+// $(document).ready(readyNow);
 
-function readyNow() {
-    console.log('jQuery working');    
-}//end readyNow
+// function readyNow() {
+//     console.log('jQuery working');    
+// }//end readyNow
 
 //first js challenge
 //function that will multiply the arguments passed in
