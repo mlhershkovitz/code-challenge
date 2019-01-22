@@ -57,4 +57,16 @@ console.log('Answer should be true', blueExist(stringsTwo));
 //both work
 
 //fourth challenge
+//function takes in two strings and returns a new string
+function animalColor(animal, color) {
+    return (`The ${animal} is ${color}.`);
+}//end animalColor function
+
+//test function
+console.log('Answer should be the dog is white', animalColor('dog', 'white'));
+//make sure it's strings being put into function
+//it works!
+
+//fifth challenge
+
 
