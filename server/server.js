@@ -15,3 +15,12 @@ app.use(express.static('server/public'));
 app.listen(PORT, () => {
     console.log('listening on port', PORT);
 });//end listener
+
+//make string a variable (neater)
+let string = 'The button was clicked.'
+
+//GET request
+app.get('/string', (req, res) => {
+    console.log('in server GET request for string');
+    res.send(string);    
+}); //end get request

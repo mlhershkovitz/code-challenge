@@ -11,4 +11,5 @@ function readyNow() {
 //need ajax GET request
 function submitGet() {
     console.log('button clicked');
+    $.ajax
 }; //end submitGet
